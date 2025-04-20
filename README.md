@@ -1,6 +1,6 @@
 # Part-1: Data Preprocessing
 ## Machine Learning workflow
-[machine learning workflow](image.png)
+[machine learning workflow](mlw.png)
 
 ## Training and Test Split in Model Evaluation
 - Training Set : Used to build the model
@@ -31,7 +31,7 @@ In this part, you will understand and learn how to implement the following Machi
     5. Decision Tree Regression
     6. Random Forest Regression
 
-## Simple Linear Regression
+## 1.Simple Linear Regression
 
 ### Understanding the equation
 ![simple linear regression equation](slr.png)
@@ -39,7 +39,7 @@ In this part, you will understand and learn how to implement the following Machi
 ### Understanding Ordinary Least Squares Regression
 ![ordinary least squarest](ordleastsquares.png)
 
-## Multiple Linear Regression
+## 2.Multiple Linear Regression
 ### Understanding the equation
 ![MLR Equation](mlr.png)
 
