@@ -54,15 +54,15 @@ In this part, you will understand and learn how to implement the following Machi
 ### Building Robust Multiple Regression Models
 5 methods of building models:
 ![methods of building models](image-3.png)
-    1. All in
+- All in
     ![all in](image-4.png)
-    2. Backward elimination
+- Backward elimination
     ![backward elim](image-5.png)
-    3. Forward Selevtion
+- Forward Selevtion
     ![forward selection](image-6.png)
-    4. Bidirectional Elimination
+- Bidirectional Elimination
     ![bidirectional elim](image-7.png)
-    5. All possible models
+- All possible models
     ![all possible models](image-8.png)
 
 #### Link for course slides 
