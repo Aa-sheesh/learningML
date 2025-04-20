@@ -45,7 +45,26 @@ In this part, you will understand and learn how to implement the following Machi
 ### Understanding Linear Regression Assumptions: Linearity, Homoscedasticity
 ![assumptions of lr](image.png)
 
+### How to handle categorical data in Linear Regression?
+![dummy variables](image-1.png) 
 
-### Link for course slides 
+### Multi co linearity in linear regression
+![multi co linearity of dummy variables](image-2.png)
+
+### Building Robust Multiple Regression Models
+5 methods of building models:
+![methods of building models](image-3.png)
+    1. All in
+    ![all in](image-4.png)
+    2. Backward elimination
+    ![backward elim](image-5.png)
+    3. Forward Selevtion
+    ![forward selection](image-6.png)
+    4. Bidirectional Elimination
+    ![bidirectional elim](image-7.png)
+    5. All possible models
+    ![all possible models](image-8.png)
+
+#### Link for course slides 
 Link for [course slides](https://online.fliphtml5.com/grdgl/hfrm/#p=12) here.
 Get your datasets, codes, and slides [here](https://www.superdatascience.com/machine-learning)
