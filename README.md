@@ -42,6 +42,8 @@ In this part, you will understand and learn how to implement the following Machi
 ## 2. Multiple Linear Regression
 ### Understanding the equation
 ![MLR Equation](mlr.png)
+### Understanding Linear Regression Assumptions: Linearity, Homoscedasticity
+![assumptions of lr](image.png)
 
 
 ### Link for course slides 
