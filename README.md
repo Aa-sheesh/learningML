@@ -1,6 +1,6 @@
 # Part-1: Data Preprocessing
 ## Machine Learning workflow
-[machine learning workflow](mlw.png)
+![machine learning workflow](mlw.png)
 
 ## Training and Test Split in Model Evaluation
 - Training Set : Used to build the model
