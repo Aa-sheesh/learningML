@@ -1,6 +1,6 @@
 # Part-1: Data Preprocessing
 ## Machine Learning workflow
-![machine learning workflow](mlw.png)
+![machine learning workflow](static/mlw.png)
 
 ## Training and Test Split in Model Evaluation
 - Training Set : Used to build the model
@@ -37,21 +37,21 @@ In this part, you will understand and learn how to implement the following Machi
 ![simple linear regression equation](slr.png)
 
 ### Understanding Ordinary Least Squares Regression
-![ordinary least squarest](ordleastsquares.png)
+![ordinary least squarest](static/ordleastsquares.png)
 
 ## 2. Multiple Linear Regression
 NOTE : We dont need to perform feature scaling in mlr as it is autobalanced itself.
 
 ### Understanding the equation
-![MLR Equation](mlr.png)
+![MLR Equation](static/mlr.png)
 ### Understanding Linear Regression Assumptions: Linearity, Homoscedasticity
-![assumptions of lr](image.png)
+![assumptions of lr](static/image.png)
 
 ### How to handle categorical data in Linear Regression?
-![dummy variables](image-1.png) 
+![dummy variables](static/image-1.png) 
 
 ### Multi co linearity in linear regression
-![multi co linearity of dummy variables](image-2.png)
+![multi co linearity of dummy variables](static/image-2.png)
 
 ### Building Robust Multiple Regression Models
 NOTE: 
@@ -127,17 +127,17 @@ Once again, this is totally optional.
 ```
 
 5 methods of building models:
-![methods of building models](image-3.png)
+![methods of building models](static/image-3.png)
 - All in
-    ![all in](image-4.png)
+    ![all in](static/image-4.png)
 - Backward elimination
-    ![backward elim](image-5.png)
+    ![backward elim](static/image-5.png)
 - Forward Selevtion
-    ![forward selection](image-6.png)
+    ![forward selection](static/image-6.png)
 - Bidirectional Elimination
-    ![bidirectional elim](image-7.png)
+    ![bidirectional elim](static/image-7.png)
 - All possible models
-    ![all possible models](image-8.png)
+    ![all possible models](static/image-8.png)
 
 #### Link for course slides 
 Link for [course slides](https://online.fliphtml5.com/grdgl/hfrm/#p=12) here.
