@@ -174,71 +174,9 @@ Once again, this is totally optional.
 - will be covered further down the course. (Section 18)
 - Read about SVM Kernel Functions [here.](https://data-flair.training/blogs/svm-kernel-functions/#)
 
-## 5. Decision Tree Regression
-
-### 1. Decision Tree Intuition
-
-![decision tree](./static/decisionTree1.png)
-![decision tree](./static/decisionTree2.png)
-
-## 6. Random Forest Regression
-
-### 1.Random Forest Intuition and Application
-
-![random forest](./static/randomForest1.png)
-
-#### Points to note
-
-- **Ensemble Learning** : When you take multiple/same algorithm multiple times and put them together to make something much more powerful.
-
-- doesn't work well wtih simple datasets with few attributes
-
-## 7. Evaluating Regression Models Performance
-
-### 1. R-squared
-
-![r-squared](./static/r-squared.png)
-
-### 2. Adjusted R-Squared
-
-![adjusted r-squared](./static/adjusted-r-squared.png)
-
-## 7. Regression Model Selection in Python
-
-![Link](https://drive.google.com/open?id=1O8vabaxga3ITjCWfwD79Xnyf8RavYuyk)
-
-- after trying all the algorithms and getting r2 score, we get that the random forest has the highest r2 score and hence it is the best model to use for the dataset.
-
-# Part-3:Classification
-
-- Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include linear models like Logistic Regression, SVM, and nonlinear ones like K-NN, Kernel SVM and Random Forests.
-
-- In this part, you will understand and learn how to implement the following Machine Learning Classification models:
-    1. Logistic Regression
-    2. K-Nearest Neighbors (K-NN)
-    3. Support Vector Machine (SVM)
-    4. Kernel SVM
-    5. Naive Bayes
-    6. Decision Tree Classification
-    7. Random Forest Classification
-
-## 1. Logistic Regression
-
-### 1. Understanding Logistic Regression
-
-![logistic regression](./static/logistic-regression1.png)
-![logistic regression](./static/logistic-regression2.png)
-
-### 2. Finding Best Fit Curve using Maximum Likelihood
-
-![Maximumum Likelihood](./static/max-likelihood1.png)
-![Maximumum Likelihood](./static/max-likelihood2.png)
-
-## 2. k Nearest Neighbours
-
-![knn steps](./static//knn1.png)
-
 ## Link for course slides
 
 Link for [course slides](https://online.fliphtml5.com/grdgl/hfrm/#p=12) here.
 Get your datasets, codes, and slides [here](https://www.superdatascience.com/machine-learning)
+
+### Hello
