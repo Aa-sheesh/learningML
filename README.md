@@ -23,7 +23,7 @@
         1. X'=(X-μ)/σ
         2. x' -> [-3,3]
 
-# Part-2:Regression
+# Part-2 : Regression (Supervised Learning)
 
 Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
 
@@ -209,7 +209,7 @@ Once again, this is totally optional.
 
 - after trying all the algorithms and getting r2 score, we get that the random forest has the highest r2 score and hence it is the best model to use for the dataset.
 
-# Part-3:Classification
+# Part-3 : Classification (Supervised Learning)
 
 - Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include linear models like Logistic Regression, SVM, and nonlinear ones like K-NN, Kernel SVM and Random Forests.
 
@@ -238,7 +238,210 @@ Once again, this is totally optional.
 
 ![knn steps](./static//knn1.png)
 
+## 3. Support Vector Machines(SVMs)
+
+### 1. Intuition
+
+![svm intuition](./static/svm1.png)
+
+### 2. Why it didnt beat knn?
+
+Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, the data can be more accurately predicted using kNN because of no hyperplane to satisfy.
+
+## 4. Kernel SVM
+
+### 1. Why do we use kernel SVMs?
+
+![kernelSVM](./static/ksvm1.png)
+
+### 2. Mapping to a higher dimension
+
+![higher dimension](./static/ksvm2.png)
+
+### 3. How kernel SVMs work
+
+![kernel svm](./static/ksvm3.png)
+
+#### Drawback
+
+- Mapping to a higher dimension is highly compute-intensive, we can solve this using kernel trick.
+![kernel trick](./static/kernelTrick.png)
+
+### 4. Kernel SVM Working with Trick
+
+![Gaussian RBF Kernel](./static/ksvm4.png)
+
+### 5. Types of Kernel Functions
+
+![types of kernel functions](./static/ksvm5.png)
+
+### 6. NonLinear SVR
+
+![non linear svr](./static/ksvm6.png)
+
+## 5. Naive Bayes Theorem
+
+### 1. Bayes Theorem
+
+![Bayes Theorem](./static/bayes1.png)
+
+### 2. Naive Bayes Classifier
+
+#### Steps
+
+![step 1](./static/bayes2-1.png)
+![step 1](./static/bayes2-2.png)
+![step 3](./static/bayes2-3.png)
+
+#### Why naive?
+
+-Independence assumption
+
+#### Additional Comments
+
+![additional comments](./static/bayes2-4.png)
+
+## 6. Decision Trees
+
+### 1. Intuition
+
+![intuition](./static/dt1.png)
+![splits](./static/dt2.png)
+![decision tree](./static/dt3.png)
+
+### 2. Comments on DT
+
+![Comments](./static/dt4.png)
+
+## 7. Random Forest (ensemble learning)
+
+![steps](./static/rf1.png)
+
+## 8.Classification Model Selection
+
+### Confusion matrix and Accuracy
+
+- False Positives: The predictions that are false but shown as true by our model (type I Error- warning)
+- False Negatives: The predictions that are true but shown as false by our model (type II Error- dangerous)
+
+**Confusion Matrix and Accuracy** <br/>
+![confusion matrix and accuracy](./static/confusionmatrix.png)
+
+- Accuracy Paradox: Sometimes the accuracy paints the wrong picture, example if the accuracy rate of one model is 98% and other is 98.5%, we would think 98.5% would be more accurate but when we see false negatives(the most dangerous type of error) then we get to know that 98% accuracy model is better than 98.5% model with lesser Fals negatives. This is called accuracy paradox.
+
+### CAP Analysis
+
+- CAP: Cumulative Accuracy Profile
+![CAP Analysis](./static/cap1.png)
+![CAP Analysis](./static/cap2.png)
+
+## 9. Evaluating Classification Algorithms
+
+- Deploy the dataseton all the models and calculate accuracy and check confusion matrix.
+- Choose the best model with highest accuracy and lowest False Negatives.
+
+# Part-4 : Clustering (Unsupervised Learning)
+
+- Clustering is similar to classification, but the basis is different.
+- In Clustering you don’t know what you are looking for, and you are trying to identify some segments or clusters in your data. When you use clustering algorithms on your dataset, unexpected things can suddenly pop up like structures, clusters and groupings you would have never thought of otherwise.
+
+## 1. k-Means Clustering
+
+### Methods to find number of Clusters needed
+
+#### 1. Elbow Method
+
+- Find WCSS for number of clusters.<br/>
+![WCSS](./static/kmeansclustering1.png)
+- Plot the graph for WCSS(within clusters sum of squares) vs number of clusters.
+- Find the kink(optimal number of clusters) and that is the number of clusters you should use.
+
+#### 2. k-Means++
+
+- Random Initialization Trap: In k means clustering, the centroids are taken randomly and that could lead to uncertain and in accurate clusters.
+- Hence, we use k-means++ to find optimal centroids that can give us accurate results using weighted random selection.
+![k-means++](./static/kmeans++.png)
+
+## 2. Hierarchial Clustering
+
+### 1. Agglomerative Clustering (bottom up approach)
+
+![agglomerative clustering steps](./static/HC1.png)
+
+#### Distance between two clusters
+
+![distance bw two clusters](./static/HC2.png)
+
+#### How do dendrograms work?
+
+![dendograms](./static/HC3.png)
+
+- How to choose how many clusters?<br/>Plot the graph of dendro gram between euclidean distances and data points and look for largest vertical lines/ highest euclidean distances between data points and divide them there. You have to set your threshhold for that and you would get your desired clusters.
+
+### 2. Divisive Clustering(top down approach)
+
+# Part-5 : Association Rule Learning
+
+- People who bought also bought ... That is what Association Rule Learning will help us figure out!
+
+## 1. Apriori
+
+- Consists of three components:
+    1. Support
+    ![support](./static/apriori1.png)
+
+    2. Confidence
+    ![confidence](./static/apriori2.png)
+
+    3. Lift
+    ![lift](./static/apriori3.png)
+
+### Algorithm
+
+![algorithm](./static/apriori4.png)
+
+## 2. Eclat
+
+![Eclat Diagram](./static/eclat2.png)
+
+### Algorithm
+
+![eclat algorithm](./static/eclat3.png)
+
+# Part-6: Reinforcement Learning
+
+- Reinforcement Learning is a powerful branch of Machine Learning.
+- It is used to solve interacting problems where the data observed up to time t is considered to decide which action to take at time t + 1. It is also used for Artificial Intelligence when training machines to perform tasks such as walking.
+- Desired outcomes provide the AI with reward, undesired with punishment. Machines learn through trial and error.
+
+## 1. Upper Confidence Bound (UCB)
+
+### 1. Multi Armed bandit Problem
+
+- The slot machine is called one armed bandit. It is called multi armed when there is a set of slot machines.
+- The question is to play the games in order to maximize returns. Each has its own distribution of probability of success.
+
+#### Question
+
+![multi armed bandit question](./static/ucb1.png)
+![answer](./static/ucb2.png)
+
+## 2. Thompson Sampling
+
 ## Link for course slides
+
+### 1. Bayesian Inference
+
+![Bayesian Inference](./static/thompson1.png)
+
+### 2. Algorithm
+
+![Thompson Algorithm](./static/thompson2.png)
+![Note](./static/thompson3.png)
+
+- We have generated our own bandit configuration.
+
+![finally](./static/thompson4.png)
 
 Link for [course slides](https://online.fliphtml5.com/grdgl/hfrm/#p=12) here.
 Get your datasets, codes, and slides [here](https://www.superdatascience.com/machine-learning)
