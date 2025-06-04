@@ -1,3 +1,6 @@
+**Q. What is the difference between ai, ml, deeplearning and data science?**
+![Difference](./static/dsaimldl.png)
+
 # Part-1: Data Preprocessing
 
 ## 1. Machine Learning workflow
@@ -40,7 +43,7 @@ In this part, you will understand and learn how to implement the following Machi
 
 ### 1. Understanding the equation
 
-![simple linear regression equation](slr.png)
+![simple linear regression equation](./static/slr.png)
 
 ### 2. Understanding Ordinary Least Squares Regression
 
@@ -56,7 +59,7 @@ NOTE : We dont need to perform feature scaling in mlr as it is autobalanced itse
 
 ### 2. Understanding Linear Regression Assumptions: Linearity, Homoscedasticity
 
-![assumptions of lr](static/image.png)
+![assumptions of lr](./static/lr.png)
 
 ### 3. How to handle categorical data in Linear Regression?
 
@@ -146,15 +149,15 @@ Once again, this is totally optional.
 
 - 5 methods of building models:
 ![methods of building models](static/image-3.png)
-- All in
+- All in<br/>
     ![all in](static/image-4.png)
-- Backward elimination
+- Backward elimination<br/>
     ![backward elim](static/image-5.png)
-- Forward Selevtion
+- Forward Selection<br/>
     ![forward selection](static/image-6.png)
-- Bidirectional Elimination
+- Bidirectional Elimination<br/>
     ![bidirectional elim](static/image-7.png)
-- All possible models
+- All possible models<br/>
     ![all possible models](static/image-8.png)
 
 ## 3. Polynomial Regression
@@ -205,7 +208,7 @@ Once again, this is totally optional.
 
 ## 7. Regression Model Selection in Python
 
-![Link](https://drive.google.com/open?id=1O8vabaxga3ITjCWfwD79Xnyf8RavYuyk)
+[Link](https://drive.google.com/open?id=1O8vabaxga3ITjCWfwD79Xnyf8RavYuyk)
 
 - after trying all the algorithms and getting r2 score, we get that the random forest has the highest r2 score and hence it is the best model to use for the dataset.
 
@@ -331,8 +334,8 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 
 ### CAP Analysis
 
-- CAP: Cumulative Accuracy Profile
-![CAP Analysis](./static/cap1.png)
+- CAP: Cumulative Accuracy Profile <br/>
+![CAP Analysis](./static/cap1.png)<br/>
 ![CAP Analysis](./static/cap2.png)
 
 ## 9. Evaluating Classification Algorithms
@@ -359,7 +362,7 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 #### 2. k-Means++
 
 - Random Initialization Trap: In k means clustering, the centroids are taken randomly and that could lead to uncertain and in accurate clusters.
-- Hence, we use k-means++ to find optimal centroids that can give us accurate results using weighted random selection.
+- Hence, we use k-means++ to find optimal centroids that can give us accurate results using weighted random selection.<br/>
 ![k-means++](./static/kmeans++.png)
 
 ## 2. Hierarchial Clustering
@@ -387,13 +390,13 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 ## 1. Apriori
 
 - Consists of three components:
-    1. Support
+    1. Support<br/>
     ![support](./static/apriori1.png)
 
-    2. Confidence
+    2. Confidence<br/>
     ![confidence](./static/apriori2.png)
 
-    3. Lift
+    3. Lift<br/>
     ![lift](./static/apriori3.png)
 
 ### Algorithm
@@ -408,6 +411,7 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 
 ![eclat algorithm](./static/eclat3.png)
 
+<!-- TODO: Complete this section from the course  -->
 # Part-6: Reinforcement Learning
 
 - Reinforcement Learning is a powerful branch of Machine Learning.
@@ -428,8 +432,6 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 
 ## 2. Thompson Sampling
 
-## Link for course slides
-
 ### 1. Bayesian Inference
 
 ![Bayesian Inference](./static/thompson1.png)
@@ -442,6 +444,16 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 - We have generated our own bandit configuration.
 
 ![finally](./static/thompson4.png)
+
+# Part - 7: Natural Language Processing
+
+- Natural Language Processing (or NLP) is applying Machine Learning models to text and language. Teaching machines to understand what is said in spoken and written word is the focus of Natural Language Processing.
+- Whenever you dictate something into your iPhone / Android device that is then converted to text, that’s an NLP algorithm in action. You can also use NLP on a text review to predict if the review is a good one or a bad one. You can use NLP on an article to predict some categories of the articles you are trying to segment. You can use NLP on a book to predict the genre of the book. And it can go further, you can use NLP to build a machine translator or a speech recognition system, and in that last example you use classification algorithms to classify language. Speaking of classification algorithms, most of NLP algorithms are classification models, and they include Logistic Regression, Naive Bayes, CART which is a model based on decision trees, Maximum Entropy again related to Decision Trees, Hidden Markov Models which are models based on Markov processes.
+- A very well-known model in NLP is the Bag of Words model. It is a model used to preprocess the texts to classify before fitting the classification algorithms on the observations containing the texts.
+
+##
+
+## Link for course slides
 
 Link for [course slides](https://online.fliphtml5.com/grdgl/hfrm/#p=12) here.
 Get your datasets, codes, and slides [here](https://www.superdatascience.com/machine-learning)
