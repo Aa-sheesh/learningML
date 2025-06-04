@@ -632,12 +632,44 @@ You can learn DL in detail [here](https://www.superdatascience.com/blogs/the-ult
 
 ### Step-3 : Flattening
 
-![flattening step](./static/cnn-9-1.png)
-![cumulative step](./static/cnn-9-2.png)
+![flattening step](./static/cnn-9-1.png)<br/>
+![cumulative step](./static/cnn-9-2.png)<br/>
 
 ### Step-4 : Full Connection
 
 - All the nodes are connected to each other and the inputs are passed using gradient descent methods and errors are backpropagated and adjusted just like ANNs and our model is made.
+- Nodes in the last hidden layer get to do the voting and vote for the final decision.
+- not only weights but feature detectors are also updated until we reach the optimal stage.
+![working for cat](./static/cnn-10.png)
+
+### Step-5: Softmax and Cross Entropy in CNNs (Optional)
+
+#### Softmax Function
+
+- For example, if we want the predictions of whether it is a dog or a cat to add upto 1, that wont happen without softmax function. Softmax helps us bring these values between 0 to 1 and add up to 1.<br/>
+![softmax function](./static/cnn-11-1.png)
+
+#### Cross Entropy Function
+
+- This is used for evaluating our CNN model.
+- Remember that we used cross entropy in ANN we used Mean Squared Cost function, in CNN, we can still use it but the cross entropy function works better with images.
+- The advantages of Cross Entropy over MSE is:
+    1. Helps network assess even a small error so that it is not stuck in the first iteration unlike it can be the case in MSE because of the help og the log function. MSE wont be guided with enough power in the right direction.
+    2. Better for classification tasks and better way to get to optimal state. Not good for regression.
+
+![cross entropy function](./static/cnn-11-2.png)
+
+#### Evaluating Efficiency
+
+    1. **Classification Error** - not a good measure for backpropagation.
+    2. **Mean Squared Error** - Better Metric
+    3. **Cross Entropy** - Even better
+
+![differences between different types of evaluation methods](./static/cnn-12.png)
+
+### Summary
+
+![summary of cnn](./static/cnn-summary.png)
 
 ---
 
