@@ -26,6 +26,8 @@
         1. X'=(X-μ)/σ
         2. x' -> [-3,3]
 
+---
+
 # Part-2 : Regression (Supervised Learning)
 
 Regression models (both linear and non-linear) are used for predicting a real value, like salary for example. If your independent variable is time, then you are forecasting future values, otherwise your model is predicting present but unknown values. Regression technique vary from Linear Regression to SVR and Random Forests Regression.
@@ -212,6 +214,8 @@ Once again, this is totally optional.
 
 - after trying all the algorithms and getting r2 score, we get that the random forest has the highest r2 score and hence it is the best model to use for the dataset.
 
+---
+
 # Part-3 : Classification (Supervised Learning)
 
 - Unlike regression where you predict a continuous number, you use classification to predict a category. There is a wide variety of classification applications from medicine to marketing. Classification models include linear models like Logistic Regression, SVM, and nonlinear ones like K-NN, Kernel SVM and Random Forests.
@@ -343,6 +347,8 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 - Deploy the dataseton all the models and calculate accuracy and check confusion matrix.
 - Choose the best model with highest accuracy and lowest False Negatives.
 
+---
+
 # Part-4 : Clustering (Unsupervised Learning)
 
 - Clustering is similar to classification, but the basis is different.
@@ -383,6 +389,8 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 
 ### 2. Divisive Clustering(top down approach)
 
+---
+
 # Part-5 : Association Rule Learning
 
 - People who bought also bought ... That is what Association Rule Learning will help us figure out!
@@ -410,8 +418,9 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 ### Algorithm
 
 ![eclat algorithm](./static/eclat3.png)
-
+---
 <!-- TODO: Complete this section from the course  -->
+
 # Part-6: Reinforcement Learning
 
 - Reinforcement Learning is a powerful branch of Machine Learning.
@@ -444,16 +453,196 @@ Since kNN is not a linear classifier whereas SVM is a linear classifier, hence, 
 - We have generated our own bandit configuration.
 
 ![finally](./static/thompson4.png)
+---
 
 # Part - 7: Natural Language Processing
 
-- Natural Language Processing (or NLP) is applying Machine Learning models to text and language. Teaching machines to understand what is said in spoken and written word is the focus of Natural Language Processing.
+- Natural Language  Processing (or NLP) is applying Machine Learning models to text and language. Teaching machines to understand what is said in spoken and written word is the focus of Natural Language Processing.
 - Whenever you dictate something into your iPhone / Android device that is then converted to text, that’s an NLP algorithm in action. You can also use NLP on a text review to predict if the review is a good one or a bad one. You can use NLP on an article to predict some categories of the articles you are trying to segment. You can use NLP on a book to predict the genre of the book. And it can go further, you can use NLP to build a machine translator or a speech recognition system, and in that last example you use classification algorithms to classify language. Speaking of classification algorithms, most of NLP algorithms are classification models, and they include Logistic Regression, Naive Bayes, CART which is a model based on decision trees, Maximum Entropy again related to Decision Trees, Hidden Markov Models which are models based on Markov processes.
 - A very well-known model in NLP is the Bag of Words model. It is a model used to preprocess the texts to classify before fitting the classification algorithms on the observations containing the texts.
+- We will learn the following topics:<br/>
+![table of contents](./static/nlp-1.png)
 
-##
+## 1. Types of NLP
+
+![types](./static/nlp-2.png)
+
+## 2. Evolution of NLP
+
+- Some Examples of NLP:
+  - If/Else Rules (Chatbot)
+  - Audio frequency component analysis (speech recognition)
+  - Bag-of-words model (Classification)
+- Some Examples of DNLP and Seq2Seq:
+  - CNN for text Recognition (Classification)
+  - Seq2Seq (many applications)
+
+## 3. Bag-of-words Model (NLP)
+
+![elements in bow](./static/nlp-4.png)<br/>
+
+### 1. Working
+
+![how bow works](./static/nlp-4.png)
+![how it relates to NLP and DNLP](./static/nlp-5.png)
+
+### 2. Metrics to see the efficiency of the model
+
+- Accuracy is not enough, so you should also look at other performance metrics like Precision (measuring exactness), Recall (measuring completeness) and the F1 Score (compromise between Precision and Recall).
+- Please find below these metrics formulas (TP = # True Positives, TN = # True Negatives, FP = # False Positives, FN = # False Negatives):
+
+    1. Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
+    2. Precision = TP / (TP + FP)
+
+    3. Recall = TP / (TP + FN)
+
+    4. F1 Score = 2 x Precision x Recall / (Precision + Recall)
+
+- other classification models that we haven't covered in Part 3 - Classification. Good ones for NLP include:
+
+    1. CART
+    2. C5.0
+    3. Maximum Entropy
+
+---
+
+# Part - 8: Deep Learning
+
+- Deep Learning is the most exciting and powerful branch of Machine Learning. Deep Learning models can be used for a variety of complex tasks:
+    1. Artificial Neural Networks for Regression and Classification
+    2. Convolutional Neural Networks for Computer Vision
+    3. Recurrent Neural Networks for Time Series Analysis
+    4. Self Organizing Maps for Feature Extraction
+    5. Deep Boltzmann Machines for Recommendation Systems
+    6. Auto Encoders for Recommendation Systems
+- **How it looks:**<br/>
+![how it works](./static/dl-1.png)
+
+## 1. Deep Learning Basics
+
+### The natural neurons
+
+![natural neuron](./static/dl-2.png)
+![natural neuron](./static/dl-3.png)
+
+### The artificial neuron
+
+![the artificial neuron](./static/dl-4.png)
+![artificial neuron steps](./static/dl-5.png)
+
+#### Activation Function Types
+
+1. **Threshold Function**<br/>
+    ![threshold function](./static/dl-6-1.png)
+2. **Sigmoid Function**<br/>
+![threshold function](./static/dl-6-2.png)
+3. **Rectifier Function**<br/>
+![threshold function](./static/dl-6-3.png)
+4. **Hyperbolic Tangent (tanh)** - similar to sigmoid but the values goes below 0 to -1.<br/>
+![threshold function](./static/dl-6-4.png)
+
+- *Note: It is quite common to use rectifier function in hidden layers and the sigmoid function in the output layer.*
+
+## 2. Deep Learning Fundamentals
+
+### 1. Gradient Descent vs Brute Force optimization
+
+- **Brute Force**: Trying all the combinations and finding an optimal solution might take billions of years to solve a problem.
+- This is called `curse of dimensionality`.
+- **Gradient Descent**: This reduces the problem space and helps us reach optimal solution faster.
+![gradient descent](./static/dl-7.png)
+
+#### 1. Batch Gradient Descent
+
+- Works if our cost function is convex meaning theres a global minima that we have to reach and there are no local minimas present.
+- We can find local minima and we might lose global goal minima. For that, we can use stochastic gradient descent.
+
+#### 2.Stochastic Gradient Descent
+
+- We take all the rows as a batch and then update cost function unlike stochastic gradient descent where we took each row and updated weights on by one.
+- Way faster.
+
+**Difference between Stochastic Gradient Descent and Batch Gradient Descent**
+![difference between stochastic and batch gradient descent](./static/dl-8.png)
+
+## 2. Artificial Neural Networks
+
+### Training ANN with stochastic gradient descent
+
+![training ann with stochastic gd](./static/ann-3.png)
+
+### How do neural networks work?
+
+![how do nns work](./static/ann-1.png)
+
+### How do neural networks learn?
+
+- Goal is to minimize the cost function.
+- Epoch : One epoch is when we go through the whole dataset and train our dataset once.
+
+![how do nns learn](./static/ann-2.png)
+
+You can learn DL in detail [here](https://www.superdatascience.com/blogs/the-ultimate-guide-to-artificial-neural-networks-ann)
+
+## 3. Convolutional Neural Networks
+
+![difference between 2d and 3d](./static/cnn-1.png)
+![steps of cnn](./static/cnn-2.png)
+
+### Step-1 : Convolution
+
+**Important Terms**
+
+1. Stride : The pace at which the input image is analyzed.
+
+![formula for convolution](./static//cnn-3.png)<br/>
+![cnn steps](./static/cnn-4.png)<br/>
+![cnn outcome](./static/cnn-5.png)
+
+### Step-1b : ReLU Layer
+
+![steps in relu](./static/cnn-6.png)<br/>
+
+- ReLU breaks linearity, this is important because the data in images is already very non linear and this helps us remove that.
+
+#### Original Image
+
+![original image](./static/cnn-6-1.png)<br/>
+
+#### After finding feature maps and getting covolutioned/ filtered image
+
+- white =  positive values, black = negative values
+![filtered image](./static/cnn-6-2.png)
+
+#### After ReLU Image
+
+- only non negative values.
+![ReLU Image](./static//cnn-6-3.png)
+
+#### Types of ReLU for CNN
+
+![types of ReLU](./static/cnn-7.png)
+
+### Step-2 : Max Pooling
+
+- To have spatial invariance i.e. it doesnt care where the features are in the picture ,we use max pooling.
+- Max pool is, in mxn matrix, there would be yxy filter that would input only the max value in that filter into the pooled feature map and give the output.
+![max pooling cnn](./static/cnn-8.png)
+
+### Step-3 : Flattening
+
+![flattening step](./static/cnn-9-1.png)
+![cumulative step](./static/cnn-9-2.png)
+
+### Step-4 : Full Connection
+
+- All the nodes are connected to each other and the inputs are passed using gradient descent methods and errors are backpropagated and adjusted just like ANNs and our model is made.
+
+---
 
 ## Link for course slides
 
 Link for [course slides](https://online.fliphtml5.com/grdgl/hfrm/#p=12) here.
 Get your datasets, codes, and slides [here](https://www.superdatascience.com/machine-learning)
+---
