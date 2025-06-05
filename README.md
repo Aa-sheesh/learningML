@@ -761,8 +761,6 @@ for visualisation [visit here.](https://setosa.io/ev/principal-component-analysi
 
 **Example**: For a spiral-shaped dataset (non-linear), Kernel PCA can unravel it into a line.
 
-### Intuition
-
 ## Summary
 
 | Feature            | PCA                                 | LDA                                 | Kernel PCA                    |
@@ -773,7 +771,70 @@ for visualisation [visit here.](https://setosa.io/ev/principal-component-analysi
 | Needs class labels | ❌ No                                | ✅ Yes                               | ❌ No                          |
 | Best for           | Feature extraction, noise reduction | Classification, supervised learning | Non-linear feature extraction |
 
-# Part-10
+---
+
+# Part - 10 : Model Selection and Boosting
+
+## 1. Model Selection
+
+***These questions remained unanswered till now, this section will help us answer them**
+
+1. How to deal with the bias variance tradeoff when building a model and evaluating its performance ?
+2. How to choose the optimal values for the hyperparameters (the parameters that are not learned) ?
+3. How to find the most appropriate Machine Learning model for my business problem ?
+
+**These solutions would help us answer them :**
+
+1. k-Fold Cross Validation
+2. Grid Search
+
+- Finally, we will complete the course with one of the most powerful Machine Learning model, that has become more and more popular: XGBoost.
+
+### 1. K-Fold Cross Validation Technique
+
+![working](./static/ms-1.png)
+
+#### Bias Variance Tradeoff
+
+![what is bias and variance](./static/ms-2.png)
+![bias vs variance graph](./static/ms-3.png)
+
+### 2. Grid SearchCV
+
+GridSearchCV is a hyperparameter tuning technique in machine learning provided by scikit-learn. It helps you find the best combination of hyperparameters for a model to improve its performance.
+
+#### What It Does
+
+- Exhaustively searches through a specified grid of hyperparameters.
+
+- Trains and evaluates your model for each combination of hyperparameters using cross-validation.
+
+- Returns the best parameters and the model with the best performance.
+
+## 2. Boosting - XGBoost
+
+- Best model both for regression and classification.
+
+### Key Features of XGBoost
+
+- Feature Explanation
+- Regularization Prevents overfitting by penalizing complex trees.
+- Parallel Processing Trains trees using multiple cores of the CPU.
+- Tree Pruning Uses a smarter pruning algorithm ("max depth" or "best-first") for efficient trees.
+- Handling Missing Values Automatically learns the best direction to go when data is missing.
+- Built-in Cross-validation Has built-in CV functions to tune parameters efficiently.
+
+### Why Use XGBoost?
+
+- High accuracy
+
+- Faster training
+
+- Handles missing values
+
+- Great with tabular datasets
+
+- Wide adoption in Kaggle competitions and real-world projects
 
 ---
 
