@@ -669,7 +669,111 @@ You can learn DL in detail [here](https://www.superdatascience.com/blogs/the-ult
 
 ### Summary
 
+Get the compiled notes [here](https://www.superdatascience.com/blogs/the-ultimate-guide-to-convolutional-neural-networks-cnn)
+
 ![summary of cnn](./static/cnn-summary.png)
+---
+
+# Part - 9 : Dimensionality Reduction
+
+- Whatever is the original number of our independent variables, we can often end up with two independent variables by applying an appropriate Dimensionality Reduction technique.
+
+- There are two types of Dimensionality Reduction techniques:
+    1. Feature Selection
+    2. Feature Extraction
+
+- Feature Selection techniques are Backward Elimination, Forward Selection, Bidirectional Elimination, Score Comparison and more. We covered these techniques in Part 2 - Regression.
+
+- We will cover the following Feature Extraction techniques:
+
+    1. Principal Component Analysis (PCA)
+
+    2. Linear Discriminant Analysis (LDA)
+
+    3. Kernel PCA
+
+## 1. Principal Component Analysis - PCA
+
+**Goal**: Maximize variance (unsupervised)
+
+**Type**: Unsupervised dimensionality reduction
+
+**How it works**: Finds directions (principal components) that capture the maximum variance in the data.
+
+**Use case**: Useful when you want to compress data or remove noise without labels.
+
+**Assumption**: Data is linearly separable.
+
+**Example**: Reducing image data from 1000 pixels to 50 features by capturing the most "variation" in the image.
+
+### Intuition
+
+- Most used dimensionality reduction algorithm.
+
+- Usecases - noise filtering, visualization, feature extraction, stock market predictions, gene data analysis
+- Goal of PCA:
+    1. Identify patterns in data
+    2. Detect the correlation between variables
+    => reduce the dimensions of a d-dimensional dataset by projecting it onto a (k)- dimensional subspace where (k<d)
+- Main functions of PCA:
+    1. Standardize the data
+    2. Obtain the eigenvctors and eigenvalues from the covariance matrix or correltation matrix, or perform singular vector decomposition.
+    3. sort eigen values in descending order and choose the k eigen vectors that correspond to the k largest eigenvalues where k is the number of dimensions of the new feature subspace.
+    4. Construct the projection matrix `W` from the selected k eighen vectors.
+    5. Transform the original dataset X via W to obtain a k-dimesnional feature subspace Y.
+
+for visualisation [visit here.](https://setosa.io/ev/principal-component-analysis/)
+
+## 2. Linear Discriminant Analysis (LDA)
+
+**Goal**: Maximize class separability (supervised)
+
+**Type**: Supervised dimensionality reduction
+
+**How it works**: Projects data onto a lower-dimensional space that maximizes the separation between multiple classes.
+
+**Use case**: Used in classification problems to improve model performance.
+
+**Assumption**: Data has class labels and is linearly separable.
+
+**Example**: Given images labeled "cat" and "dog", LDA finds features that best separate those two classes.
+
+### Intuition
+
+- Similarities with PCA:
+  - Used as a dimensionality reduction technique.
+  - Used in the pre-processing step for pattern classification
+  - Has the goal to project a dataset onto a lower dimensional space
+- How it is different from PCA:
+  - LDA differs because in addition to finding the component axises with LDA, we are interested in the axes that minimize the separation between multiple classes.
+  - Basically, it is used to project a feature space onto a small subspace while maintaining the class discriminatory information.
+  - PCA is unsupervised but LDA is supervised because of the relation to the dependent variable.
+
+## 3. Kernel PCA
+
+**Goal**: Capture non-linear relationships
+
+**Type**: Unsupervised, non-linear dimensionality reduction
+
+**How it works**: Uses kernel functions (like RBF or polynomial) to map data to a higher-dimensional space where linear PCA is then applied.
+
+**Use case**: When data isn't linearly separable, Kernel PCA can capture complex patterns.
+
+**Example**: For a spiral-shaped dataset (non-linear), Kernel PCA can unravel it into a line.
+
+### Intuition
+
+## Summary
+
+| Feature            | PCA                                 | LDA                                 | Kernel PCA                    |
+| ------------------ | ----------------------------------- | ----------------------------------- | ----------------------------- |
+| Supervision        | Unsupervised                        | Supervised                          | Unsupervised                  |
+| Linearity          | Linear                              | Linear                              | Non-linear                    |
+| Goal               | Maximize variance                   | Maximize class separability         | Capture non-linear structures |
+| Needs class labels | ❌ No                                | ✅ Yes                               | ❌ No                          |
+| Best for           | Feature extraction, noise reduction | Classification, supervised learning | Non-linear feature extraction |
+
+# Part-10
 
 ---
 
