@@ -838,8 +838,14 @@ GridSearchCV is a hyperparameter tuning technique in machine learning provided b
 
 ---
 
+## Link for my iteration
+
+Link for [models:](https://drive.google.com/drive/folders/1FItH_XxC23y4tglD4T3aYivqHBcLylJP?usp=drive_link)
+Link for [datasets and notes](https://github.com/Aa-sheesh/learningML)
+
 ## Link for course slides
 
 Link for [course slides](https://online.fliphtml5.com/grdgl/hfrm/#p=12) here.
-Get your datasets, codes, and slides [here](https://www.superdatascience.com/machine-learning)
+Get datasets, codes, and slides [here](https://www.superdatascience.com/machine-learning)
+
 ---
